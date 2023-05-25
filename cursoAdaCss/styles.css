@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Comic Neue', cursive;/*tipo de fonte*/
+}
+
+/*resolvendo o problema de medidas fixas como o px*/
+:root {
+    font-size: 62.5%;/*para converter o px em rem, apenas dividindo por 10. Ex:65px é igual a 6.5rem*/
+}
+
+h1 {
+    color: blue;/*cor da fonte do texto*/
+    background-color: aqua;/*cor de fundo*/
+    font-size: 9.6rem;/*tamanho da fonte do texto*/
+    font-weight: 900;/*espessura da fonte do texto*/
+    text-decoration: line-through;/*cria um risco no titulo*/
+}
+
+a {
+    font-size: 2.4rem;
+    color: blue;
+}
+/*altera o site visitado*/
+a:visited {
+    color: red;
+}
+/*altera o site quando o cursor passa por cima*/
+a:hover {
+    color: #555;
+}
+
+.bg {
+    height: 500px;/*haltura da div*/
+    width: 100%;/*largura da div*/
+    background-color: #555;
+    background-image:url('https://images.unsplash.com/photo-1682695795798-1b31ea040caf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60');/*introduzindo uma imagem de fundo na div*/
+    background-size: contain;/*tamanho da imagem*/
+    background-repeat: no-repeat;/*faz a imagem repetir ou não*/
+    background-attachment: fixed;/*fixa o background e movimenta o texto*/
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 90px;
+}
