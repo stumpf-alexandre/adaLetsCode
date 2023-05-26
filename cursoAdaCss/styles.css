@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;/*não deixa uma caixa alterar suas medidas quando utilizada padding dentro dela*/
+}
+
+main {
+    padding-top: 7rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -20,6 +25,14 @@ h1 {
     text-decoration: line-through;/*cria um risco no titulo*/
 }
 
+.menu {
+    position: fixed;/*fixa o elemento na tela*/
+    background-color: steelblue;
+    width: 100%;
+    height: 7rem;
+    z-index: 1;/*tem uma posição acima do que o display relative e absolut*/
+}
+
 a {
     font-size: 2.4rem;
     color: blue;
@@ -34,7 +47,7 @@ a:hover {
 }
 
 .bg {
-    height: 500px;/*haltura da div*/
+    height: 50rem;/*haltura da div*/
     width: 100%;/*largura da div*/
     background-color: #555;
     background-image:url('https://images.unsplash.com/photo-1682695795798-1b31ea040caf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60');/*introduzindo uma imagem de fundo na div*/
@@ -47,5 +60,82 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     text-align: justify;
-    text-indent: 90px;
+    text-indent: 9rem;
+}
+
+table, td, th {
+    border: 0.1rem solid black;
+}
+
+table {
+    font-size: 2.4rem;
+    border-collapse: separate;/*criando bordas duplas na tabela*/
+}
+
+table tr:first-child {/*estilizando o primeiro elemento da tabela*/
+    background-color: steelblue;
+    color: #fff;
+}
+
+table tr:nth-child(2n + 3) {/*estilizando as linhas alternadamente, começando da terceira linha*/
+    background-color: #aaa;
+}
+
+ul, ol {
+    padding-left: 3.2rem;
+}
+
+ul {
+    list-style: circle;/*estiliza os marcadores da lista não ordenada*/
+}
+ol {
+    list-style: decimal-leading-zero;/*estiliza os marcadores da lista ordenada*/
+}
+
+li {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+.box {
+    height: 10rem;
+    width: 20rem;
+    border: 1rem solid red;
+    display: inline-block;/*coloca uma outra caixa ou imagem do lado da mesma, só encaixa se for inline*/
+    border-radius: 4rem;
+}
+
+img {
+    height: 10rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+.boxes {
+    position: relative;
+}
+
+.box2 {
+    height: 10rem;
+    width: 20rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: blue;
+    color: #fff;
+    border: 1rem solid red;
+    display: inline-block;
+    position: static;/*por padrão, não deixa utilizar os elementos top, lefth e demais*/
+}
+
+.box2:nth-child(1) {
+    position: absolute;/*fica por cima de todos os outros elementos*/
+}
+
+.contact-list h2 {
+    top: 7rem;
+    position: sticky;/*deixa fixo por um limite de posição*/
+    background-color: limegreen;
 }
