@@ -310,3 +310,22 @@ img {
         color: #fff;
     }
 }
+
+.caixas {
+    height: calc(100vh);
+    position: relative;
+    gap: 2rem 5rem;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: 1fr 3fr 1fr;/*como gostariamos de dispor nossas colunas: 1 unidade flexivel na primeira coluna, 3 unidades flexivel na segunda coluna e 1 unidade flexivel na terceira coluna*/
+    grid-template-rows: 3fr repeat(2, 1fr);
+}
+
+.caixa {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: blue;
+    color: #fff;
+    border: 1rem solid red;
+    font-size: 4rem;
+}
