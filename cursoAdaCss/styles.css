@@ -139,3 +139,46 @@ img {
     position: sticky;/*deixa fixo por um limite de posição*/
     background-color: limegreen;
 }
+
+.flexes {
+    height: calc(100vh - 14rem);
+    position: relative;
+    display: flex;/*elemento para iniciar a utilização do flex box*/
+    /*flex-wrap: wrap;*?/*elemento para quebra de linha, se necessario, no flex box*/
+    /*flex-direction: row;*//*elemento para direciona entre linhas e colunas, e caso necessario reverse*/
+    /*Utilizando o flex-flow voce consegue fazer um short ranger com o flex-direction e o flex-wrap no mesmo elemento*/
+    flex-flow: row wrap;
+    justify-content: center;/*centraliza os elementosmas no eixo principal, deixa eles utiizarem toda a tela*/
+    /*align-items: center;*//*ajuda o justfy-content, centralizando os elementos no eixo secundário, deixando os elementos dispersos na tela, não deixa os elementos ocuparem toda a tela*/
+    align-content: center;/*ajuda o justfy-content, centralizando os elementos no eixo secundário, deixando os elementos agrupados na tela, não deixa os elementos ocuparem toda a tela*/
+    gap: 1rem 5rem;/*limita o espaçamento dos elementos mesmo que o flex box não de estes espaçamentos. Primeiro valor na vertical, segundo valor na horizontal*/ 
+
+}
+
+.flex_1 {
+    min-height: 10rem;
+    min-width: 20rem;
+    padding: 1.5rem;
+    border: 1rem solid red;
+    border-radius: 0.4rem;
+    background-color: blue;
+    color: #fff;
+    font-size: 4rem;
+    display: inline-block;
+    /*flex-basis: 30%;*//*serve para dar tamanhos fixos para distribuir por igual as div na tela*/
+    order: 10;
+    flex: 1;/*todos os elementos ficam com o mesmo pesso e eles crescem juntos conforme a tela cresce*/
+}
+/*o elemento order faz com que voce especifique em que posição deve vir uma determinada div*/
+.flex_1:nth-child(1) {
+    order: 1;
+}
+
+.flex_1:nth-child(2) {
+    order: 2;
+    flex: 10;/*o crescimento agora vai ser apenas do elemento 2*/
+}
+
+.flex_1:nth-child(7) {
+    order: 3;
+}
