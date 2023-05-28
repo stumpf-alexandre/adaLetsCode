@@ -280,7 +280,6 @@ img {
     text-decoration: none;
     width: 100%;
     transform: scale(.5);
-    transition: all .4s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out;
     animation: pulse 2s infinite;
     animation-direction: alternate;
 }
