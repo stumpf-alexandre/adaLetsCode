@@ -1,7 +1,7 @@
 import Contador from "./components/Contador"
 import Lista from "./components/Lista"
-
 import MeuComponente from "./components/MeuComponents"
+import Tarefa from "./components/Tarefa"
 
 
 function App() {
@@ -24,6 +24,10 @@ function App() {
       <div>
         <h1>Listas no React</h1>
         <Lista/>
+      </div>
+      <div>
+        <h1>Buscando dados</h1>
+        <Tarefa/>
       </div>
     </div>
     
