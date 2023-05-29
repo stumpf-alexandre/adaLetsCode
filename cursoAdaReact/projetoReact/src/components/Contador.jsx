@@ -15,17 +15,24 @@ export default function Contador () {
         return (
             <div>
                 <h1>Valor muito alto</h1>
+                <button onClick={diminuir}>diminuir</button>
+            </div>
+        )
+    } else if (contador < -3) {
+        return (
+            <div>
+                <h1>Valor muito baixo</h1>
+                <button onClick={aumentar}>aumentar</button>
+            </div>
+        )
+    } else {
+        return (
+            <div>
+                <h1>Meu Contador: {contador}</h1>
+                {/*{contador > 9 ? <h1>Valor muito grande</h1> : null}*/}
                 <button onClick={aumentar}>aumentar</button>
                 <button onClick={diminuir}>diminuir</button>
             </div>
         )
     }
-    return (
-        <div>
-            <h1>Meu Contador: {contador}</h1>
-            {/*{contador > 9 ? <h1>Valor muito grande</h1> : null}*/}
-            <button onClick={aumentar}>aumentar</button>
-            <button onClick={diminuir}>diminuir</button>
-        </div>
-    )
 }

@@ -1,4 +1,5 @@
 import Contador from "./components/Contador"
+import Lista from "./components/Lista"
 
 import MeuComponente from "./components/MeuComponents"
 
@@ -19,6 +20,10 @@ function App() {
       <div>
         <h1>Estados e Eventos</h1>
         <Contador/>
+      </div>
+      <div>
+        <h1>Listas no React</h1>
+        <Lista/>
       </div>
     </div>
     
