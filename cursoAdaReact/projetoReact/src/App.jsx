@@ -1,4 +1,5 @@
-import MeuContador from "./MeuContador"
+import Contador from "./components/Contador"
+
 import MeuComponente from "./components/MeuComponents"
 
 
@@ -17,7 +18,7 @@ function App() {
 
       <div>
         <h1>Estados e Eventos</h1>
-        <MeuContador/>
+        <Contador/>
       </div>
     </div>
     

@@ -1,6 +1,6 @@
 import { useState }  from "react"
 
-export default function MeuContador () {
+export default function Contador () {
     const [contador, setContador] = useState(0)
 
     function aumentar() {
