@@ -1,4 +1,6 @@
+import MeuContador from "./MeuContador"
 import MeuComponente from "./components/MeuComponents"
+
 
 function App() {
 
@@ -12,7 +14,13 @@ function App() {
       <MeuBotao conteudo='Me click'/>
       <MeuBotao conteudo='Depois aqui'/>
       <MeuBotao conteudo='E depois aqui'/>
+
+      <div>
+        <h1>Estados e Eventos</h1>
+        <MeuContador/>
+      </div>
     </div>
+    
   )
 }
 function MeuBotao(props) {
